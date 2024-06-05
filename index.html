@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels</title>
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/148673336?s=200&v=4">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.12.0/gradio.js"></script>
+</head>
+<body>
+  
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels</h1>
+            <div class="is-size-5 publication-authors">
+                    <span class="author-block">ICML 2024</span>
+              </div>
+            <div class="is-size-5 publication-authors">
+<!-- Paper authors -->
+<span class="author-block">
+  <a href="https://teowu.github.io" target="_blank">Haoning Wu</a><sup>1*+</sup>,
+</span>
+<span class="author-block">
+  <a href="https://github.com/zzc-1998" target="_blank">Zicheng Zhang</a><sup>2*</sup>,
+</span>
+<span class="author-block">
+  <a href="https://sites.google.com/view/r-panda" target="_blank">Weixia Zhang</a><sup>2</sup>,
+</span>
+<span class="author-block">
+  <a href="https://chaofengc.github.io" target="_blank">Chaofeng Chen</a><sup>1</sup>,
+</span>
+<span class="author-block">
+  <a href="https://liaoliang92.github.io" target="_blank">Liang Liao</a><sup>1</sup>,
+</span>
+<span class="author-block">
+  <a href="https://github.com/lcysyzxdxc" target="_blank">Chunyi Li</a><sup>2</sup>,
+</span>
+<span class="author-block">
+  <a href="https://github.com/YixuanGao98" target="_blank">Yixuan Gao</a><sup>2</sup>,
+</span>
+<span class="author-block">
+  <a href="https://github.com/AnnanWangDaniel" target="_blank">Annan Wang</a><sup>1</sup>,
+</span>
+<span class="author-block">
+  <a href="https://github.com/ZhangErliCarl/" target="_blank">Erli Zhang</a><sup>1</sup>,
+</span>
+<span class="author-block">
+  <a href="https://wenxiusun.com" target="_blank">Wenxiu Sun</a><sup>3</sup>,
+</span>
+<span class="author-block">
+  <a href="https://scholar.google.com/citations?user=uT9CtPYAAAAJ&hl=en" target="_blank">Qiong Yan</a><sup>3</sup>,
+</span>
+<span class="author-block">
+  <a href="https://sites.google.com/site/minxiongkuo/" target="_blank">Xiongkuo Min</a><sup>2</sup>,
+</span>
+<span class="author-block">
+  <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&infoid=153&flag=153" target="_blank">Guangtao Zhai</a><sup>2#</sup>,
+</span>
+<span class="author-block">
+  <a href="https://personal.ntu.edu.sg/wslin/Home.html" target="_blank">Weisi Lin</a><sup>1#</sup>,
+</span>
+</div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Nanyang Technological University</span>
+                    <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University</span>
+                    <span class="author-block"><sup>3</sup>Sensetime Research</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution. <sup>+</sup>Project Lead. <sup>#</sup>Corresponding Author(s).</small></span>
+                  </div>
+
+            
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://q-future.github.io/Q-Align/fig/Q_Align_v0_1_preview.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Technical Report</span>
+                      </a>
+                    </span>
+
+                    <!-- huggingface -->
+                    <span class="link-block">
+                      <a href="https://huggingface.co/q-future/one-align" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-smile"></i>
+                      </span>
+                      <span>OneAlign (Model)</span>
+                    </a>
+                  </span>
+
+                      <!-- huggingface -->
+                    <span class="link-block">
+                      <a href="https://q-future.github.io/Q-Align/lora_finetune" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                      </span>
+                      <span>LoRA Fine-tuning</span>
+                    </a>
+                  </span>
+                      
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Q-Future/Q-Align" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- huggingface -->
+                    <span class="link-block">
+                      <a href="https://huggingface.co/spaces/teowu/OneScorer" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-smile"></i>
+                      </span>
+                      <span>Demo</span>
+                    </a>
+                  </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2312.17090" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section"  style="background-color:#efeff081">
+    <div class="container is-max-desktop" id="gradio">
+      <gradio-app src="https://q-future-onealign.hf.space"></gradio-app>
+    </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions. Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. The proposed <strong>Q-Align</strong> achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure. With the syllabus, we further unify the three tasks into one model, termed the OneAlign. In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
+          </p>
+        </div>
+        <img src="static/images/radar.png" , width="800" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+  <!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Technical Report</h2>
+
+      <iframe  src="https://q-future.github.io/Q-Align/fig/Q_Align_v0_1_preview.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+  
+<!-- Teaser -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h5 class="title">Overview</h5>
+          <div class="content has-text-justified">
+            <p>
+              Based on the general principle of teaching LMMs with text-defined rating levels, 
+              we generate the instruction-response pairs by converting <strong><em>existing score labels</em></strong> in image quality assessment (IQA),
+              image aesthetic assessment (IAA) and video quality assessment (VQA) datasets. 
+              During inference, by simulating the process of collecting mean opinion scores (MOS) from annotators, 
+              we extract the close-set probabilinities of rating levels and perform weighted averages to obtain the LMM-predicted score.
+            </p>
+          </div>
+          <img src="static/images/q-align-syllabus.png" , width="1400" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h5 class="title">Insight: How Do Humans Rate?</strong></h5>
+          <div class="content has-text-justified">
+            <p>
+              Typically, it includes three stages: <em>(1)</em> Training human raters with text-defined rating levels. 
+              Simulating this, we propose the rating-level-based syllabus for LMMs. <em>(2)</em> Collecting human ratings. Human raters choose levels (Type 1) or toggle level-guided sliders to score (Type 2), 
+              <strong>without directly inputting the score in either way</strong>. <em>(3)</em> Converting initial ratings to MOS via weighted average. 
+              Following this stage, we propose the probability-based inference for LMMs to predict final scores.
+            </p>
+          </div>
+          <img src="static/images/motivation_from_human.png" , width="1400" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h5 class="title">Structure</h5>
+          <div class="content has-text-justified">
+            <p>
+              The model structure of the Q-Align reduces tokens per image to 64 through the visual abstractor, effectively unifying images and videos (as sequences of images) under one general structure. This approach allows for a streamlined and efficient processing of both static images and dynamic video content within the same framework.
+            </p>
+          </div>
+          <img src="static/images/structure.png" , width="900" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/iqares.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Results on Image Quality Assessment (IQA).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/iaares.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Results on Image Aesthetic Assessment (IAA).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vqares.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Results on Video Quality Assessment (VQA).
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/onealignres.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Results of <strong>OneAlign</strong> in unifying IQA, IAA and VQA.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{wu2023qalign,
+  title={Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels},
+  author={Wu, Haoning and Zhang, Zicheng and Zhang, Weixia and Chen, Chaofeng and Li, Chunyi and Liao, Liang and Wang, Annan and Zhang, Erli and Sun, Wenxiu and Yan, Qiong and Min, Xiongkuo and Zhai, Guangtao and Lin, Weisi},
+  journal={arXiv preprint arXiv:2312.17090},
+  year={2023},
+  institution={Nanyang Technological University and Shanghai Jiao Tong University and Sensetime Research},
+  note={Equal Contribution by Wu, Haoning and Zhang, Zicheng. Corresponding Authors: Zhai, Guangtao and Lin, Weisi.}
+}
+</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
