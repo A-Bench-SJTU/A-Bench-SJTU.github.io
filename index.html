@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels</title>
+  <title>A-Bench: Are LMMs Masters at Evaluating AI-generated Images?</title>
   <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/148673336?s=200&v=4">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -54,61 +54,48 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels</h1>
-            <div class="is-size-5 publication-authors">
+            <h1 class="title is-1 publication-title">A-Bench: Are LMMs Masters at Evaluating AI-generated Images?</h1>
+<!--             <div class="is-size-5 publication-authors">
                     <span class="author-block">ICML 2024</span>
-              </div>
+              </div> -->
             <div class="is-size-5 publication-authors">
 <!-- Paper authors -->
 <span class="author-block">
-  <a href="https://teowu.github.io" target="_blank">Haoning Wu</a><sup>1*+</sup>,
+  <a href="https://zzc-1998.github.io/" target="_blank">Zicheng Zhang</a><sup>1</sup><sup>*</sup>,
 </span>
 <span class="author-block">
-  <a href="https://github.com/zzc-1998" target="_blank">Zicheng Zhang</a><sup>2*</sup>,
+  <a href="https://teowu.github.io/" target="_blank">Haoning Wu</a><sup>2</sup><sup>*</sup>,
 </span>
 <span class="author-block">
-  <a href="https://sites.google.com/view/r-panda" target="_blank">Weixia Zhang</a><sup>2</sup>,
+  <a href="https://github.com/lcysyzxdxc" target="_blank">Chunyi Li</a><sup>1</sup><sup>*</sup>,
 </span>
 <span class="author-block">
-  <a href="https://chaofengc.github.io" target="_blank">Chaofeng Chen</a><sup>1</sup>,
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=85yWgIcAAAAJ" target="_blank">Yingjie Zhou</a><sup>1</sup>,
 </span>
 <span class="author-block">
-  <a href="https://liaoliang92.github.io" target="_blank">Liang Liao</a><sup>1</sup>,
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=nDlEBJ8AAAAJ" target="_blank">Wei Sun</a><sup>1</sup>,
 </span>
 <span class="author-block">
-  <a href="https://github.com/lcysyzxdxc" target="_blank">Chunyi Li</a><sup>2</sup>,
+  <a href="https://minxiongkuo.github.io/" target="_blank">Xiongkuo Min</a><sup>1</sup>,
 </span>
 <span class="author-block">
-  <a href="https://github.com/YixuanGao98" target="_blank">Yixuan Gao</a><sup>2</sup>,
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=NSR4UkMAAAAJ" target="_blank">Zijian Chen</a><sup>1</sup>,
 </span>
 <span class="author-block">
-  <a href="https://github.com/AnnanWangDaniel" target="_blank">Annan Wang</a><sup>1</sup>,
+  <a href="https://scholar.google.ca/citations?user=Tq2hoMQAAAAJ&hl=en" target="_blank">Xiaohong Liu</a><sup>1</sup>,
 </span>
 <span class="author-block">
-  <a href="https://github.com/ZhangErliCarl/" target="_blank">Erli Zhang</a><sup>1</sup>,
+  <a href="https://personal.ntu.edu.sg/wslin/Home.html" target="_blank">Weisi Lin</a><sup>2</sup>,
 </span>
 <span class="author-block">
-  <a href="https://wenxiusun.com" target="_blank">Wenxiu Sun</a><sup>3</sup>,
-</span>
-<span class="author-block">
-  <a href="https://scholar.google.com/citations?user=uT9CtPYAAAAJ&hl=en" target="_blank">Qiong Yan</a><sup>3</sup>,
-</span>
-<span class="author-block">
-  <a href="https://sites.google.com/site/minxiongkuo/" target="_blank">Xiongkuo Min</a><sup>2</sup>,
-</span>
-<span class="author-block">
-  <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&infoid=153&flag=153" target="_blank">Guangtao Zhai</a><sup>2#</sup>,
-</span>
-<span class="author-block">
-  <a href="https://personal.ntu.edu.sg/wslin/Home.html" target="_blank">Weisi Lin</a><sup>1#</sup>,
+  <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&infoid=153&flag=153" target="_blank">Guangtao Zhai</a><sup>1</sup><sup>#</sup>
 </span>
 </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Nanyang Technological University</span>
-                    <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University</span>
-                    <span class="author-block"><sup>3</sup>Sensetime Research</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution. <sup>+</sup>Project Lead. <sup>#</sup>Corresponding Author(s).</small></span>
+                    <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University</span>
+                    <span class="author-block"><sup>2</sup>Nanyang Technological University</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution. <sup>#</sup>Corresponding Author.</small></span>
                   </div>
 
             
@@ -117,7 +104,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://q-future.github.io/Q-Align/fig/Q_Align_v0_1_preview.pdf" target="_blank"
+                        <a href="https://github.com/Q-Future/A-Bench/blob/main/A_Bench__Are_LMMs_Masters_at_Evaluating_AI_generated_Images_.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -128,16 +115,16 @@
 
                     <!-- huggingface -->
                     <span class="link-block">
-                      <a href="https://huggingface.co/q-future/one-align" target="_blank"
+                      <a href="https://huggingface.co/datasets/q-future/A-Bench" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-smile"></i>
                       </span>
-                      <span>OneAlign (Model)</span>
+                      <span>A-Bench (Data)</span>
                     </a>
                   </span>
 
-                      <!-- huggingface -->
+<!--                       <!-- huggingface -->
                     <span class="link-block">
                       <a href="https://q-future.github.io/Q-Align/lora_finetune" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -146,12 +133,12 @@
                       </span>
                       <span>LoRA Fine-tuning</span>
                     </a>
-                  </span>
+                  </span> -->
                       
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/Q-Future/Q-Align" target="_blank"
+                    <a href="https://github.com/Q-Future/A-Bench" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -160,7 +147,7 @@
                   </a>
                 </span>
 
-                <!-- huggingface -->
+<!--                 <!-- huggingface -->
                     <span class="link-block">
                       <a href="https://huggingface.co/spaces/teowu/OneScorer" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -169,11 +156,11 @@
                       </span>
                       <span>Demo</span>
                     </a>
-                  </span>
+                  </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2312.17090" target="_blank"
+                  <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -189,12 +176,12 @@
   </div>
 </section>
 
-
+<!-- 
 <section class="section"  style="background-color:#efeff081">
     <div class="container is-max-desktop" id="gradio">
       <gradio-app src="https://q-future-onealign.hf.space"></gradio-app>
     </div>
-</section>
+</section> -->
 
 
 <!-- Paper abstract -->
@@ -205,17 +192,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions. Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. The proposed <strong>Q-Align</strong> achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure. With the syllabus, we further unify the three tasks into one model, termed the OneAlign. In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
+            How to accurately and efficiently assess AI-generated images (AIGIs) remains a critical challenge for generative models. Given the high costs and extensive time commitments required for user studies, many researchers have turned towards employing large multi-modal models (LMMs) as AIGI evaluators, the precision and validity of which are still questionable. Furthermore, traditional benchmarks often utilize mostly natural-captured content rather than AIGIs to test the abilities of LMMs, leading to a noticeable gap for AIGIs. Therefore, we introduce A-Bench in this paper, a benchmark designed to diagnose whether LMMs are masters at evaluating AIGIs. Specifically, A-Bench is organized under two key principles: 1) Emphasizing both high-level semantic understanding and low-level visual quality perception to address the intricate demands of AIGIs. 2) Various generative models are utilized for AIGI creation, and various LMMs are employed for evaluation, which ensures a comprehensive validation scope. Ultimately, 2,864 AIGIs from 16 text-to-image models are sampled, each paired with question-answers annotated by human experts, and tested across 18 leading LMMs. We hope that A-Bench will significantly enhance the evaluation process and promote the generation quality for AIGIs. The benchmark is available at https://github.com/Q-Future/A-Bench.
           </p>
         </div>
-        <img src="static/images/radar.png" , width="800" />
+        <img src="https://github.com/Q-Future/A-Bench/blob/main/overall.png" , width="800" />
       </div>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
 
-  <!-- Paper poster -->
+<!--   <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -226,7 +213,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
@@ -239,14 +226,12 @@
           <h5 class="title">Overview</h5>
           <div class="content has-text-justified">
             <p>
-              Based on the general principle of teaching LMMs with text-defined rating levels, 
-              we generate the instruction-response pairs by converting <strong><em>existing score labels</em></strong> in image quality assessment (IQA),
-              image aesthetic assessment (IAA) and video quality assessment (VQA) datasets. 
-              During inference, by simulating the process of collecting mean opinion scores (MOS) from annotators, 
-              we extract the close-set probabilinities of rating levels and perform weighted averages to obtain the LMM-predicted score.
+              
+              Two key diagnostic subsets are defined: A-Bench-P1 → high-level semantic understanding, and A-Bench-P2 → low-level quality perception. 
+              
             </p>
           </div>
-          <img src="static/images/q-align-syllabus.png" , width="1400" />
+          <img src="https://github.com/Q-Future/A-Bench/blob/main/spotlight.png" , width="1400" />
         </div>
       </div>
     </div>
@@ -257,16 +242,15 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">Insight: How Do Humans Rate?</strong></h5>
+          <h5 class="title">A-Bench Construction</strong></h5>
           <div class="content has-text-justified">
             <p>
-              Typically, it includes three stages: <em>(1)</em> Training human raters with text-defined rating levels. 
-              Simulating this, we propose the rating-level-based syllabus for LMMs. <em>(2)</em> Collecting human ratings. Human raters choose levels (Type 1) or toggle level-guided sliders to score (Type 2), 
-              <strong>without directly inputting the score in either way</strong>. <em>(3)</em> Converting initial ratings to MOS via weighted average. 
-              Following this stage, we propose the probability-based inference for LMMs to predict final scores.
+              For high-level semantic understanding, A-Bench-P1 targets three critical areas: Basic Recognition, Bag-of-Words Pitfalls Discrimination, and Outside Knowledge Realization, which are designed to progressively test the LMM’s capability in AIGI semantic understanding, moving from simple to complex prompt-related content. For low-level quality perception, A-Bench-P2 concentrates on Technical Quality Perception, Aesthetic Quality Evaluation, and Generative Distortion Assessment, which are designed to cover the common quality issues and AIGI-specific quality problems. 
+              Specifically, a comprehensive dataset of 2,864 AIGIs sourced from various T2I models is compiled, including 1,408 AIGIs for A-Bench-P1 and 1,456 for A-Bench-P2. Each AIGI is paired with a question-answer set annotated by human experts.
+              We are open to submission-based evaluation for A-Bench. The details for submission are in the Evaluate your model on A-Bench Section.
             </p>
           </div>
-          <img src="static/images/motivation_from_human.png" , width="1400" />
+          <img src="https://github.com/Q-Future/A-Bench/blob/main/spotlight.png" , width="1400" />
         </div>
       </div>
     </div>
@@ -283,7 +267,7 @@
               The model structure of the Q-Align reduces tokens per image to 64 through the visual abstractor, effectively unifying images and videos (as sequences of images) under one general structure. This approach allows for a streamlined and efficient processing of both static images and dynamic video content within the same framework.
             </p>
           </div>
-          <img src="static/images/structure.png" , width="900" />
+          <img src="https://github.com/Q-Future/A-Bench/blob/main/examples.png" , width="900" />
         </div>
       </div>
     </div>
@@ -296,32 +280,18 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/iqares.png" alt="MY ALT TEXT"/>
+        <img src="https://github.com/Q-Future/A-Bench/blob/main/part1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Results on Image Quality Assessment (IQA).
+          Results on A-Bench-P1.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/iaares.png" alt="MY ALT TEXT"/>
+        <img src="https://github.com/Q-Future/A-Bench/blob/main/part2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Results on Image Aesthetic Assessment (IAA).
+          Results on A-Bench-P2.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/vqares.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Results on Video Quality Assessment (VQA).
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/onealignres.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Results of <strong>OneAlign</strong> in unifying IQA, IAA and VQA.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
@@ -332,13 +302,11 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{wu2023qalign,
-  title={Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels},
-  author={Wu, Haoning and Zhang, Zicheng and Zhang, Weixia and Chen, Chaofeng and Li, Chunyi and Liao, Liang and Wang, Annan and Zhang, Erli and Sun, Wenxiu and Yan, Qiong and Min, Xiongkuo and Zhai, Guangtao and Lin, Weisi},
-  journal={arXiv preprint arXiv:2312.17090},
-  year={2023},
-  institution={Nanyang Technological University and Shanghai Jiao Tong University and Sensetime Research},
-  note={Equal Contribution by Wu, Haoning and Zhang, Zicheng. Corresponding Authors: Zhai, Guangtao and Lin, Weisi.}
+      <pre><code>@inproceedings{zhang2024abench,
+    author = {Zhang, Zicheng and Wu, Haoning and Li, Chunyi and Zhou, Yingjie and Sun, Wei and Xiongkuo, Min and Chen, Zijian and Liu, Xiaohong and Lin, Weisi and Zhai, Guangtao},
+    title = {A-Bench: Are LMMs Masters at Evaluating AI-generated Images?},
+    booktitle = {Arxiv},
+    year = {2024}
 }
 </code></pre>
     </div>
@@ -353,9 +321,6 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
         </div>
